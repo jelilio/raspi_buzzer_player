@@ -14,7 +14,7 @@ def destroy():
 
 def run(pirPin):
     print('motion detected')
-    buzzer_player.play(buzzer_type=BuzzerType.UNDERWORLD)
+    buzzer_player.play(buzzer_type=BuzzerType.TWINKLE_TWINKLE)
 
 
 if __name__ == "__main__":
