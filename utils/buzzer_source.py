@@ -1,4 +1,4 @@
-from buzzer_type import BuzzerType
+from utils.buzzer_type import BuzzerType
 
 notes = {
     'B0': 31,
