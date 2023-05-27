@@ -7,8 +7,8 @@ from pir_sensor import PirSensor
 from utils.buzzer_player import BuzzerPlayer
 from utils.buzzer_type import BuzzerType
 
-buzzer_player = BuzzerPlayer(buzzer_pin=11)
-pir_sensor = PirSensor(pir_sensor_pin=7)
+buzzer_player = BuzzerPlayer(buzzer_pin=17)
+# pir_sensor = PirSensor(pir_sensor_pin=7)
 pir = MotionSensor(4)
 
 
