@@ -1,3 +1,5 @@
+import time
+
 import RPi.GPIO as GPIO
 
 from pir_sensor import PirSensor
@@ -15,6 +17,7 @@ def destroy():
 def run(pirPin):
     print('motion detected')
     buzzer_player.play(buzzer_type=BuzzerType.TWINKLE_TWINKLE)
+    time.sleep(10)
 
 
 if __name__ == "__main__":
