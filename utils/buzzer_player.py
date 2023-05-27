@@ -9,7 +9,7 @@ class BuzzerPlayer(object):
         self.buzzer_pin = buzzer_pin
 
     def setup(self):
-        GPIO.setmode(GPIO.BCM)  # Numbers GPIOs by physical location BOARD
+        # GPIO.setmode(GPIO.BCM)  # Numbers GPIOs by physical location BOARD
         GPIO.setup(self.buzzer_pin, GPIO.OUT)
 
     def play(self, buzzer_type):

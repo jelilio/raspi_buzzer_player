@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 from gpiozero import MotionSensor
 
 
-from pir_sensor import PirSensor
+# from pir_sensor import PirSensor
 from utils.buzzer_player import BuzzerPlayer
 from utils.buzzer_type import BuzzerType
 
@@ -24,7 +24,9 @@ def run(pirPin):
 
 if __name__ == "__main__":
     try:
+        GPIO.setmode(GPIO.BCM)
         buzzer_player.setup()
+        buzzer_player.play(buzzer_type=BuzzerType.TWINKLE_TWINKLE)
         # pir_sensor.setup()
         # pir_sensor.activate(run)
         while True:
