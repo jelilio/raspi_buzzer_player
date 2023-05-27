@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-from buzzer_source import available_tones
+from utils.buzzer_source import available_tones
 
 
 class BuzzerPlayer(object):
